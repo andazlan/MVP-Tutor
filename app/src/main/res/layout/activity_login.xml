@@ -22,10 +22,20 @@
         android:hint="Password"
         android:layout_marginBottom="5dp"
         android:inputType="textPassword"/>
-    <Button
+    <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_login"
-        android:text="Login"
-        android:layout_gravity="end"/>
+        android:layout_gravity="end">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_login"
+            android:text="Login"/>
+        <ProgressBar
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/prb_progress"/>
+    </FrameLayout>
 </LinearLayout>
